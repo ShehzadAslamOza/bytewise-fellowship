@@ -1,10 +1,148 @@
-/* * {
-  border: 1px solid red;
-} */
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: sans-serif;
   font-weight: 500;
+}
+
+.nav {
+  padding: 10px 0px 100px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .burger {
+  width: 50px;
+  padding-right: 20px;
+}
+
+.nav .flutter {
+  width: 120px;
+  padding-left: 30px;
+}
+
+.hero {
+  height: 160vh;
+  width: 99vw;
+  background-color: #1a68d3;
+  background-image: radial-gradient(
+      ellipse at bottom,
+      #1a68d3 5%,
+      transparent 60%
+    ),
+    linear-gradient(136deg, transparent, #71c7ee 290%),
+    linear-gradient(115deg, #9d9af1, transparent 40%),
+    linear-gradient(180deg, transparent 0, #1a68d3 70%),
+    radial-gradient(ellipse at -70% -180%, transparent 80%, #71c7ee 0),
+    radial-gradient(ellipse at bottom, #1a68d3 40%, transparent 80%),
+    radial-gradient(ellipse at 5% 340%, transparent 80%, #bfc2f4 0);
+  overflow: hidden;
+  padding-bottom: var(--gutter-lg);
+  padding-top: calc(var(--ui-header-height) + 80px);
+}
+
+.hero-gallary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+.hero-left {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr 50px 1fr 1fr;
+  justify-items: end;
+}
+
+.hero-left .card-1 {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  align-self: end;
+}
+
+.hero-left .card-2 {
+  margin-top: 20px;
+  grid-column: 3;
+  grid-row: 3 / span 2;
+}
+
+.hero-left .card-3 {
+  grid-column: 2;
+  grid-row: 4 / span 2;
+  align-self: start;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.hero-right {
+  margin-top: 200px;
+}
+
+.card-4,
+.card-5,
+.card-6,
+.card-7 {
+  margin: 10px;
+}
+
+.card-a {
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.hero-main h1 {
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.hero-center {
+  margin-top: 50px;
+  text-align: center;
+  margin: 60px 10px 0px 10px;
+}
+
+.hero-center img {
+  height: 75vh;
+}
+
+.hero-main h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.hero-main .btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.hero-main .btn button {
+  text-align: center;
+  margin: auto;
+}
+
+.hero-main .btn button:hover {
+  color: #0468d7;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  border: 1px solid #0468d7;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 button {
@@ -14,6 +152,7 @@ button {
   padding: 10px 25px 10px 25px;
   border: 1px solid #0468d7;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 button:hover {
@@ -32,6 +171,7 @@ button:hover {
   border-radius: 5px;
   display: grid;
   grid-template-columns: 80px 1fr;
+  margin-top: 80px;
 }
 
 .announcement-img {
@@ -122,12 +262,50 @@ button:hover {
   font-size: 55px;
 }
 
+
 @media only screen and (max-width: 800px) {
-  /* body {
-    background-color: lightblue;
-  } */
+
   .container {
     width: 90vw;
+    margin: auto;
+  }
+
+  .hero {
+    height: 150vh;
+  }
+  .hero-main h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero-gallary {
+    display: block;
+    height: 70vh;
+    margin: auto;
+  }
+
+  .hero-left {
+    display: none;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  .hero-center img {
+    height: 60vh;
+  }
+
+  .hero-main h2 {
+    color: white;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
     margin: auto;
   }
 
@@ -183,6 +361,31 @@ button:hover {
   color: #f25d50;
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .hero-gallary {
+    display: block;
+    height: 90vh;
+    margin: auto;
+  }
+
+  .hero-left {
+    display: none;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  .hero-main h2 {
+    color: white;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+}
+
 @media only screen and (max-width: 1500px) and (min-width: 800px) {
   /* body {
     background-color: green;
@@ -190,6 +393,26 @@ button:hover {
   .container {
     width: 80vw;
     margin: auto;
+  }
+
+  .hero-main h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .hero-right {
+    margin-top: 50px;
+  }
+
+  .card-4,
+  .card-5,
+  .card-6,
+  .card-7 {
+    margin: 0px;
   }
 
   .info {
@@ -210,5 +433,18 @@ button:hover {
 
   .multi-img {
     width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 1800px) and (min-width: 1500px) {
+  .hero-right {
+    margin-top: 50px;
+  }
+
+  /* .card-4,
+  .card-5,
+  .card-6,
+  .card-7 {
+    margin: 0px; */
   }
 }
