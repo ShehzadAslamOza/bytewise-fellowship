@@ -269,7 +269,7 @@ button:hover {
   }
 
   .hero {
-    height: 150vh;
+    height: 170vh;
   }
   .hero-main h1 {
     color: white;
@@ -400,6 +400,16 @@ button:hover {
     text-align: center;
     width: 80%;
     margin: auto;
+  }
+
+  .nav .burger {
+    width: 35px;
+    padding-right: 10px;
+  }
+
+  .nav .flutter {
+    width: 100px;
+    padding-left: 20px;
   }
 
   .hero-right {
