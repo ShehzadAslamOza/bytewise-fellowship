@@ -9,3 +9,4 @@
 | 5   | [Learn Sass](https://www.youtube.com/watch?v=_a5j7KoflTs)                                 | ✅     | -                                        |
 | 6   | [Learn Tailwind](https://www.youtube.com/watch?v=dFgzHOX84xQ)                             | ✅     | https://tailwind-bytewise.netlify.app/   |
 | 7   | [Learn JavaScript Fundamentals](https://youtu.be/XIOLqoPHCJ4)                             |        |                                          |
+| 8   | [Learn DOM Manipulation](https://www.youtube.com/watch?v=5fb2aPlgoys)                     |        |                                          |
