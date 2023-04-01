@@ -8,5 +8,5 @@
 | 4   | [Learn Flexbox](https://www.youtube.com/watch?v=3YW65K6LcIA)                              | ✅     | https://flexbox-bytewise.vercel.app/     |
 | 5   | [Learn Sass](https://www.youtube.com/watch?v=_a5j7KoflTs)                                 | ✅     | -                                        |
 | 6   | [Learn Tailwind](https://www.youtube.com/watch?v=dFgzHOX84xQ)                             | ✅     | https://tailwind-bytewise.netlify.app/   |
-| 7   | [Learn Javascript Fundamentals](https://youtu.be/XIOLqoPHCJ4)                             |        |                                          |
+| 7   | [Learn Javascript Fundamentals](https://youtu.be/XIOLqoPHCJ4)                             | ✅     |                                          |
 | 8   | [Learn DOM Manipulation](https://www.youtube.com/watch?v=5fb2aPlgoys)                     |        |                                          |
