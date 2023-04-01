@@ -75,8 +75,8 @@
 //   console.log("heheheh" + num);
 // }
 
-const plus = (a, b) => {
-  console.log(a + b);
-};
+// const plus = (a, b) => {
+//   console.log(a + b);
+// };
 
-plus(2, 5);
+// plus(2, 5);
