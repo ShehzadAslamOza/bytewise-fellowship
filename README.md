@@ -12,5 +12,5 @@
 | 8   | [Learn DOM Manipulation](https://www.youtube.com/watch?v=5fb2aPlgoys)                     |        | Styling Left - Coming Soon                                               |
 |     |                                                                                           |        | [2 - Modal Demo Site](https://model-dom-bytewise-fellowship.vercel.app/) |
 |     |                                                                                           |        | [3 - Accordion Demo Site](https://accordion-dom-bytewise.netlify.app/)   |
-|     |                                                                                           |        |                                                                          |
+|     |                                                                                           |        | [4 - Stopwatch](https://stopwatch-dom-bytewise.netlify.app/)             |
 |     |                                                                                           |        |                                                                          |
