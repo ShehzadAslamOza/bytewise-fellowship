@@ -10,7 +10,7 @@
 | 6   | [Learn Tailwind](https://www.youtube.com/watch?v=dFgzHOX84xQ)                             | ✅     | https://tailwind-bytewise.netlify.app/                                   |
 | 7   | [Learn JavaScript Fundamentals](https://youtu.be/XIOLqoPHCJ4)                             | ✅     | -                                                                        |
 | 8   | [Learn DOM Manipulation](https://www.youtube.com/watch?v=5fb2aPlgoys)                     |        | Styling Left - Coming Soon                                               |
-|     |                                                                                           |        | [(2) Modal Demo Site](https://model-dom-bytewise-fellowship.vercel.app/) |
+|     |                                                                                           |        | [2 - Modal Demo Site](https://model-dom-bytewise-fellowship.vercel.app/) |
 |     |                                                                                           |        |                                                                          |
 |     |                                                                                           |        |                                                                          |
 |     |                                                                                           |        |                                                                          |
