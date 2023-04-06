@@ -14,3 +14,4 @@
 |     |                                                                                           |        | [3 - Accordion Demo Site](https://accordion-dom-bytewise.netlify.app/)                 |
 |     |                                                                                           |        | [4 - Stopwatch](https://stopwatch-dom-bytewise.netlify.app/)                           |
 |     |                                                                                           |        | [5 - Todo List](https://todolist-dom-bytewise.netlify.app/)                            |
+| 9   | [Learn Asynchronous Javascript](https://youtu.be/ZYb_ZU8LNxs)                             |        |                                                                                        |
