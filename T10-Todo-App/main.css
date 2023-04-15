@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::-moz-placeholder {
+  color: #d2e7eb;
+  opacity: 1; /* Firefox */
+}
+
+::placeholder {
+  color: #d2e7eb;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #d2e7eb;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #d2e7eb;
+}
+
+body {
+  background-color: #e9f2fb;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 25px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+#main-header {
+  background-color: #061b25;
+  width: 100%;
+  padding: 15px 20px 40px 20px;
+}
+#main-header h1 {
+  color: white;
+}
+#main-header .input-box {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  #main-header .input-box {
+    flex-direction: column;
+  }
+}
+#main-header form {
+  width: calc(100% - 140px);
+  color: white;
+}
+#main-header form input {
+  width: 100%;
+  padding: 15px 10px;
+  background-color: #082937;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  #main-header form {
+    width: 100%;
+  }
+}
+#main-header button {
+  width: 120px;
+  background-color: #e57e3b;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 12px 10px;
+}
+@media (max-width: 768px) {
+  #main-header button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+#main-header button:hover {
+  cursor: pointer;
+  background-color: #d1631c;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.stats-container .stat {
+  display: flex;
+  color: #d2e7eb;
+  margin: 0 15px;
+}
+.stats-container .stat div {
+  background-color: #082937;
+  padding: 5px 10px;
+  border-radius: 5px 0px 0px 5px;
+}
+.stats-container .stat div#completed-tasks, .stats-container .stat div#total-tasks, .stats-container .stat div#remaining-tasks {
+  background-color: #1b89ba;
+  border-radius: 0px 5px 5px 0px;
+}
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .stats-container .stat {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+  .stats-container .stat div {
+    padding: 5px 8px;
+  }
+}
+
+.todo {
+  margin-bottom: 4rem;
+}
+.todo li {
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo li div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.todo li.completed {
+  background-color: #c4d8e1;
+  text-decoration: line-through;
+  color: #51839e;
+}
+.todo li input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  margin: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid black;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+.todo li input[type=checkbox]::before {
+  content: url("data:image/svg+xml,%3Csvg fill='%23ffffff' height='10px' width='64px' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 490.00 490.00' xml:space='preserve' stroke='%23ffffff' transform='rotate(0)'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpolygon points='452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 '%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+  transform: scale(0);
+  transition: all 0.2s ease-in-out;
+}
+.todo li input[type=checkbox]:checked {
+  background-color: #51839e;
+  border-color: #51839e;
+}
+.todo li input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+.todo li button {
+  border: 0;
+  background-color: transparent;
+  padding: 0.25em;
+  color: #51839e;
+}
+.todo li button:active {
+  transform: scale(0.8);
+}
+.todo li span {
+  padding: 2px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.todo li span:focus {
+  background-color: #c4d8e1;
+  outline: none;
+}
+.todo li span[contenteditable]:hover {
+  background-color: #c4d8e1;
+}/*# sourceMappingURL=main.css.map */

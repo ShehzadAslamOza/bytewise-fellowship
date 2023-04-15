@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  // border: 1px solid red;
+  // border: none;
+}
+
+$background-color: #e9f2fb;
+$primary-color: #061b25;
+$secondary-color: #082937;
+$accent-color: #1b89ba;
+$primary-text-color: white;
+$secondary-text-color: #d2e7eb;
+$button-color: #e57e3b;
+$disabled-color: #c4d8e1;
+$disabled-text-color: #51839e;
+$global-transition: all 0.2s ease-in-out;
+
+::placeholder {
+  color: $secondary-text-color;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $secondary-text-color;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $secondary-text-color;
+}
+
+body {
+  background-color: $background-color;
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 25px;
+
+  @include mobile() {
+    width: 90%;
+  }
+}
+
+#main-header {
+  background-color: $primary-color;
+  width: 100%;
+  padding: 15px 20px 40px 20px;
+
+  h1 {
+    color: $primary-text-color;
+  }
+
+  .input-box {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+
+    @include mobile() {
+      flex-direction: column;
+    }
+  }
+
+  form {
+    width: calc(100% - 140px);
+    color: white;
+
+    input {
+      width: 100%;
+      padding: 15px 10px;
+      background-color: $secondary-color;
+      color: white;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+    }
+
+    @include mobile() {
+      width: 100%;
+    }
+  }
+
+  button {
+    width: 120px;
+    background-color: $button-color;
+    color: $primary-text-color;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 12px 10px;
+
+    @include mobile() {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken($color: $button-color, $amount: 10%);
+    }
+  }
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  .stat {
+    display: flex;
+    color: $secondary-text-color;
+    margin: 0 15px;
+
+    div {
+      background-color: $secondary-color;
+      padding: 5px 10px;
+      border-radius: 5px 0px 0px 5px;
+
+      &#completed-tasks,
+      &#total-tasks,
+      &#remaining-tasks {
+        background-color: $accent-color;
+        border-radius: 0px 5px 5px 0px;
+      }
+    }
+  }
+
+  @include mobile() {
+    flex-direction: row;
+    justify-content: center;
+    .stat {
+      font-size: 12px;
+      margin: 0 5px;
+      div {
+        padding: 5px 8px;
+      }
+    }
+  }
+}
+
+.todo {
+  margin-bottom: 4rem;
+
+  li {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    &.completed {
+      background-color: $disabled-color;
+      text-decoration: line-through;
+      color: $disabled-text-color;
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      background-color: transparent;
+      margin: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 2px solid black;
+      border-radius: 100%;
+      display: grid;
+      place-content: center;
+
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg fill='%23ffffff' height='10px' width='64px' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 490.00 490.00' xml:space='preserve' stroke='%23ffffff' transform='rotate(0)'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpolygon points='452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 '%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+        transform: scale(0);
+        transition: $global-transition;
+      }
+
+      &:checked {
+        background-color: $disabled-text-color;
+        border-color: $disabled-text-color;
+      }
+
+      &:checked::before {
+        transform: scale(1);
+      }
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+      padding: 0.25em;
+      color: $disabled-text-color;
+
+      &:active {
+        transform: scale(0.8);
+      }
+    }
+
+    span {
+      padding: 2px;
+      border-radius: 5px;
+      transition: $global-transition;
+
+      &:focus {
+        background-color: $disabled-color;
+        outline: none;
+      }
+
+      &[contenteditable]:hover {
+        background-color: $disabled-color;
+      }
+    }
+  }
+}
