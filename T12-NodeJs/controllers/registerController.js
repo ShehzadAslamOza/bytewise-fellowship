@@ -1,13 +1,13 @@
 const bcrypt = require("bcrypt");
-const path = require("path");
 const User = require("../model/User");
+// const path = require("path");
 
-const usersDB = {
-  users: require("../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
+// const usersDB = {
+//   users: require("../model/users.json"),
+//   setUsers: function (data) {
+//     this.users = data;
+//   },
+// };
 
 const handleNewUser = async (req, res) => {
   const { user, pwd } = req.body;

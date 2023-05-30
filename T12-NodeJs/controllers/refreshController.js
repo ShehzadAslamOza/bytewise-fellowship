@@ -1,25 +1,29 @@
-const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const path = require("path");
-const fsPromises = require("fs").promises;
+const User = require("../model/User");
+// const bcrypt = require("bcrypt");
+// const path = require("path");
+// const fsPromises = require("fs").promises;
 
-const usersDB = {
-  users: require("../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
+// const usersDB = {
+//   users: require("../model/users.json"),
+//   setUsers: function (data) {
+//     this.users = data;
+//   },
+// };
 
-const handleRefreshToken = (req, res) => {
+const handleRefreshToken = async (req, res) => {
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(401);
   console.log(cookies);
 
   const refreshToken = cookies.jwt;
 
-  const foundUser = usersDB.users.find(
-    (person) => person.refreshToken === refreshToken
-  );
+  //   const foundUser = usersDB.users.find(
+  //     (person) => person.refreshToken === refreshToken
+  //   );
+
+  const foundUser = await User.findOne({ refreshToken: refreshToken }).exec();
+
   if (!foundUser) return res.sendStatus(403);
 
   // Evaluate JWT

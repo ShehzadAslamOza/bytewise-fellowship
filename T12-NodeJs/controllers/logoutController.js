@@ -1,12 +1,13 @@
-const path = require("path");
-const fsPromises = require("fs").promises;
+const User = require("../model/User");
+// const path = require("path");
+// const fsPromises = require("fs").promises;
 
-const usersDB = {
-  users: require("../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
+// const usersDB = {
+//   users: require("../model/users.json"),
+//   setUsers: function (data) {
+//     this.users = data;
+//   },
+// };
 
 const handleLogout = async (req, res) => {
   const cookies = req.cookies;
@@ -17,9 +18,10 @@ const handleLogout = async (req, res) => {
   const refreshToken = cookies.jwt;
 
   // Is refresh Token in db
-  const foundUser = usersDB.users.find(
-    (person) => person.refreshToken === refreshToken
-  );
+  //   const foundUser = usersDB.users.find(
+  //     (person) => person.refreshToken === refreshToken
+  //   );
+  const foundUser = await User.findOne({ refreshToken: refreshToken }).exec();
 
   if (!foundUser) {
     res.clearCookie("jwt", { httpOnly: true });
@@ -27,16 +29,19 @@ const handleLogout = async (req, res) => {
   }
 
   // If refresh token in db
-  const otherUsers = usersDB.users.filter(
-    (person) => person.refreshToken !== foundUser.refreshToken
-  );
-  const currentUser = { ...foundUser, refreshToken: "" };
-  usersDB.setUsers([...otherUsers, currentUser]);
+  foundUser.refreshToken = "";
+  await foundUser.save();
 
-  await fsPromises.writeFile(
-    path.join(__dirname, "..", "model", "users.json"),
-    JSON.stringify(usersDB.users)
-  );
+  //   const otherUsers = usersDB.users.filter(
+  //     (person) => person.refreshToken !== foundUser.refreshToken
+  //   );
+  //   const currentUser = { ...foundUser, refreshToken: "" };
+  //   usersDB.setUsers([...otherUsers, currentUser]);
+
+  //   await fsPromises.writeFile(
+  //     path.join(__dirname, "..", "model", "users.json"),
+  //     JSON.stringify(usersDB.users)
+  //   );
 
   res.clearCookie("jwt", { httpOnly: true }); // secure:true (serves only https)
   res.sendStatus(204);
