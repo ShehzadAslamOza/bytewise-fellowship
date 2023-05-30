@@ -6,11 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-c3ow {
+            border-color: inherit;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-0pky {
+            border-color: inherit;
+            text-align: left;
+            vertical-align: top
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head>
 
 <body>
-    <h1>Index</h1>
+    <div class="container">
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-0pky"><span style="font-weight:bold">Method</span></th>
+                    <th class="tg-0pky"><span style="font-weight:bold">Description</span></th>
+                    <th class="tg-0pky"><span style="font-weight:bold">Need Authorization?</span></th>
+                    <th class="tg-c3ow"><span style="font-weight:bold">Body</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-c3ow"><span style="font-weight:bold;color:#34FF34">GET</span></td>
+                    <td class="tg-c3ow"><a href="/employees">Get All Employees</a></td>
+                    <td class="tg-c3ow">YES</td>
+                    <td class="tg-c3ow">-</td>
+                </tr>
+                <tr>
+                    <td class="tg-c3ow"><span style="font-weight:bold;color:#FFCC67">POST</span></td>
+                    <td class="tg-0pky"><a href="/employees">Add New Employee</a></td>
+                    <td class="tg-c3ow">YES</td>
+                    <td class="tg-c3ow">{"firstname":"Muhammad","lastname": "Shehzad"}</td>
+                </tr>
+                <tr>
+                    <td class="tg-c3ow"><span style="font-weight:bold;color:#34CDF9">PUT</span></td>
+                    <td class="tg-c3ow"><a href="/employees">Update Employee</a></td>
+                    <td class="tg-c3ow">YES</td>
+                    <td class="tg-0pky">{"id":"647652418a206de7e886b785","firstname":"Muhammad","lastname": "Shehzad"}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky"><span style="font-weight:bold;color:#FD6864">DELETE</span></td>
+                    <td class="tg-c3ow"><a href="/employees">Delete Employee</a></td>
+                    <td class="tg-c3ow">YES</td>
+                    <td class="tg-c3ow">{"id":"647652418a206de7e886b785"}</td>
+                </tr>
+                <tr>
+                    <td class="tg-c3ow"><span style="font-weight:bold;color:#34FF34">GET</span></td>
+                    <td class="tg-c3ow"><a href="/employees/64764e1a641aacc6e09eb27c">Get Employee</a></td>
+                    <td class="tg-c3ow">YES</td>
+                    <td class="tg-c3ow">{"id":"647652418a206de7e886b785"}</td>
+                </tr>
+                <tr>
+                    <td class="tg-c3ow"><span style="font-weight:bold;color:#FFC702">POST</span></td>
+                    <td class="tg-c3ow"><a href="/register">Register User</a></td>
+                    <td class="tg-c3ow">NO</td>
+                    <td class="tg-c3ow">{"user":"Umair","pwd":"99999"}</td>
+                </tr>
+                <tr>
+                    <td class="tg-c3ow"><span style="font-weight:bold;color:#FFC702">POST</span></td>
+                    <td class="tg-c3ow"><a href="/auth">Delete Employee</a></td>
+                    <td class="tg-c3ow">NO</td>
+                    <td class="tg-c3ow">{"user":"Umair","pwd":"99999"}</td>
+                </tr>
+                <tr>
+                    <td class="tg-c3ow"><span style="font-weight:bold;color:#34FF34">GET</span></td>
+                    <td class="tg-c3ow"><a href="/refresh">Refresh</a></td>
+                    <td class="tg-c3ow">NO</td>
+                    <td class="tg-c3ow">Needs Refresh Token</td>
+                </tr>
+                <tr>
+                    <td class="tg-c3ow"><span style="font-weight:bold;color:#34FF34">GET</span></td>
+                    <td class="tg-c3ow"><a href="/logout">Logout</a></td>
+                    <td class="tg-c3ow">NO</td>
+                    <td class="tg-c3ow">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
