@@ -1,6 +1,5 @@
 const path = require("path");
 const fsPromises = require("fs").promises;
-require("dotenv").config();
 
 const usersDB = {
   users: require("../model/users.json"),
