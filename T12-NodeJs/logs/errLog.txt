@@ -1,0 +1,11 @@
+20230528	02:54:00	c67f8f4e-e182-4d3d-8f62-0fed48d998f3	Error: Not Allowed by Cors
+20230528	02:54:21	f011cad4-5792-4813-8de9-c29239ec0297	Error: Not Allowed by Cors
+20230528	02:54:28	2f68d7c4-3446-4db8-983f-f0ba05db162e	Error: Not Allowed by Cors
+20230528	02:54:47	b6331cf5-621f-4984-bb0e-2b28678ac5e7	Error: Not Allowed by Cors
+20230528	02:54:50	6c8c2b30-f604-45c8-8d75-0dc0da31f0e3	Error: Not Allowed by Cors
+20230528	14:19:19	a3da1214-e88d-498d-9247-a077cfe2b5a0	SyntaxError: Unexpected token } in JSON at position 32
+20230529	16:26:41	9169d91f-1b2b-4d3c-a776-bc51b4448a83	TypeError: usersDB.users.finf is not a function
+20230529	16:35:49	fcaa7cab-af2b-4682-b1c1-776377f3435c	TypeError: Cannot read properties of undefined (reading 'username')
+20230529	16:35:53	d47256a8-0730-4c27-a031-a6436055df8e	TypeError: Cannot read properties of undefined (reading 'username')
+20230529	16:35:55	a027b675-017e-4704-a565-175e4f67a27a	TypeError: Cannot read properties of undefined (reading 'username')
+20230529	16:35:56	98b2fd74-84f4-4447-8f79-78b67177e3bf	TypeError: Cannot read properties of undefined (reading 'username')
