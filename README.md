@@ -2,7 +2,7 @@
 
 |     | Task                                                                                                   | Status | Deployment                                                                             |
 | --- | ------------------------------------------------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------- |
-| 13  | [GoalApp](https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1) | ✅     |                                                                                        |
+| 13  | [GoalApp](https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1) | ✅     | [Goal App](https://goalapp-bytewise.vercel.app/)                                       |
 | 12  | [NodeJs](https://youtu.be/f2EqECiTBL8)                                                                 | ✅     | [Employees API](https://bytewise-fellowship-nodejs.vercel.app/)                        |
 | 11  | [React Fundamentals](https://youtu.be/w7ejDZ8SWv8)                                                     | ✅     |                                                                                        |
 | 10  | [Build todo app in javascript](https://youtu.be/y71CdVq5SvI)                                           | ✅     |                                                                                        |
