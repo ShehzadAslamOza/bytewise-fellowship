@@ -2,7 +2,7 @@
 
 |     | Task                                                                                                   | Status | Deployment                                                                             |
 | --- | ------------------------------------------------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------- |
-| 14  | [Final Project- Evently] | ✅     | [Evently App]([https://goalapp-bytewise.vercel.app/](https://evently-bytewise.vercel.app/))                                       |
+| 14  | Final Project- Evently | ✅     | [Evently App](https://evently-bytewise.vercel.app/))                                       |
 | 13  | [GoalApp](https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1) | ✅     | [Goal App](https://goalapp-bytewise.vercel.app/)                                       |
 | 12  | [NodeJs](https://youtu.be/f2EqECiTBL8)                                                                 | ✅     | [Employees API](https://bytewise-fellowship-nodejs.vercel.app/)                        |
 | 11  | [React Fundamentals](https://youtu.be/w7ejDZ8SWv8)                                                     | ✅     |                                                                                        |
