@@ -3,7 +3,8 @@
 |     | Task                                                                                                   | Status | Deployment                                                                             |
 | --- | ------------------------------------------------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------- |
 | 14  | [Final Project - Evently](https://evently-bytewise.vercel.app/) | ✅     | [Evently App](https://evently-bytewise.vercel.app/)                                      |
-|  | |    | [Final Project - Backend](https://github.com/ShehzadAslamOza/evently-backend)                                      |
+|  | |    | [Final Project - Backend - Repo](https://github.com/ShehzadAslamOza/evently-backend)                                      |
+|  | |    | [Final Project - Frontend - Repo](https://github.com/ShehzadAslamOza/evently-frontend)                                      |
 | 13  | [GoalApp](https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1) | ✅     | [Goal App](https://goalapp-bytewise.vercel.app/)                                       |
 | 12  | [NodeJs](https://youtu.be/f2EqECiTBL8)                                                                 | ✅     | [Employees API](https://bytewise-fellowship-nodejs.vercel.app/)                        |
 | 11  | [React Fundamentals](https://youtu.be/w7ejDZ8SWv8)                                                     | ✅     |                                                                                        |
